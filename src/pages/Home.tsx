@@ -7,6 +7,7 @@ import Pagination from '../components/molecules/Pagination';
 import { useTheme } from '../context/ThemeContext';
 import SkeletonCard from '../components/molecules/SkeletonCard';
 import rickandmorty from '../assets/rickandmorty.jpg';
+import rickandmortyLogo from '../assets/rickandmortylogo.png';
 
 const CharacterCard = React.lazy(() => import('../components/organisms/CharacterCard'));
 
@@ -84,6 +85,23 @@ const Home: React.FC = () => {
         </div>
         <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
       </div>
+      <footer className='container my-2 py-8 flex flex-row justify-center items-center gap-5'>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+          </svg>
+        </span> 
+        <span>Rick and Morty API Integration</span>
+        <img 
+          style={{
+            width: 65,
+            height: 65,
+            objectFit: 'cover'
+          }}
+          src={rickandmortyLogo} 
+          className='rounded-full'
+          alt='rickandmorty background'/>
+      </footer>
     </>
   );
 };
