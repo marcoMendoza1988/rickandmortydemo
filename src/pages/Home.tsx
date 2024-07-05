@@ -37,6 +37,7 @@ const Home: React.FC = () => {
       startTransition(() => {
         dispatch(setPage(page));
         dispatch(fetchCharacters({ page, query }));
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
   };
