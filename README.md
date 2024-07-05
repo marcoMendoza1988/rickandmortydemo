@@ -45,7 +45,7 @@ To run this project locally, follow these steps:
 
 ## Usage
 
-- **Search and Filter:** Enter search terms in the search bar to filter characters by name, status, location, or gender.
+- **Search and Filter:** Enter search terms in the search bar to filter characters by name.
 - **Pagination:** Use pagination buttons to navigate between different result pages.
 - **Theme Switching:** Click on the "Toggle Light/Dark Mode" button to switch between light and dark themes of the application.
 
