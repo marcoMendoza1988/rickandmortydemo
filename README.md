@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+# Rick and Morty Characters Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Rick and Morty Logo](./rickandmorty-logo.png)
 
-Currently, two official plugins are available:
+This project is a web application developed with ReactJS and TypeScript that consumes the Rick and Morty public API (https://rickandmortyapi.com/api). It allows searching characters, filtering by name, paginating results, and switching between light and dark themes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Display character cards with detailed information.
+- Search and filter characters by name.
+- Pagination to navigate through API results.
+- Dynamic switch between light mode and dark mode themes.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- ReactJS
+- TypeScript
+- Redux Toolkit for state management
+- Axios for making HTTP requests to the API
+- Tailwind CSS for rapid and responsive styling
+- Vite as a fast development tool
+- Suspense and React.Lazy
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/marcoMendoza1988/rickandmortydemo.git
+   cd rickandmortydemo
+   ```
+
+2. **Install dependencies:**
+
+  ```bash
+  npm install
+  ````
+3. **Run the application:**
+
+  ```bash
+  npm dev
+  ```
+
+## Usage
+
+- **Search and Filter:** Enter search terms in the search bar to filter characters by name, status, location, or gender.
+- **Pagination:** Use pagination buttons to navigate between different result pages.
+- **Theme Switching:** Click on the "Toggle Light/Dark Mode" button to switch between light and dark themes of the application.
+
+## Contributing
+
+Contributions are welcome. If you want to improve this project, follow these steps:
+
+1. Fork the project.
+2. Create a new branch (`git checkout -b feature/awesome-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some awesome feature'`).
+5. Push to the branch (`git push origin feature/awesome-feature`).
+6. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. For more details, see the [LICENSE](./LICENSE) file.
